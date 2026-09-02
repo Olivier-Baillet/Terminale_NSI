@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Cours en Ligne</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+            --text-muted: #64748b;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header h1 { margin: 0; font-size: 2.5rem; }
+        header p { margin-top: 0.5rem; opacity: 0.9; }
+
+        container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: block;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card h2 { margin-top: 0; color: var(--primary-color); }
+        .card p { color: var(--text-muted); flex-grow: 1; }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        .btn:hover { opacity: 0.9; }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Support de Cours SNT</h1>
+        <p>Retrouvez l'ensemble des ressources et documents pédagogiques</p>
+    </header>
+
+    <container>
+        <div class="grid">
+            <!--
+            <div class="card">
+                <div>
+                    <h2>Première séance</h2>
+                    <p>Présentation des concepts de base, des outils nécessaires et prise en main.</p>
+                </div>
+                <a href="Cours_TPs/README" class="btn" target="_blank">Voir le cours</a>
+            </div>
+            -->
+
+            <div class="card">
+                <div>
+                    <h2>Photographie numérique</h2>
+                </div>
+                <a href="Cours_TPs/Photographie_numérique/index_PN" class="btn">Voir le cours</a>
+            </div>
+
+            <!--
+            <div class="card">
+                <div>
+                    <h2>Internet</h2>
+                </div>
+                <a href="Cours_TPs/Internet/Index_I" class="btn" >Voir le cours</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h2>Le Web</h2>
+                </div>
+                <a href="Cours_TPs/Web/Index_W" class="btn" >Voir le cours</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h2>Les données structurées et leur traitement</h2>
+                </div>
+                <a href="Cours_TPs/Données_structurées_et_leur_traitement/Index_DST" class="btn" >Voir le cours</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h2>Réseaux sociaux</h2>
+                </div>
+                <a href="Cours_TPs/Réseaux_sociaux/Index_RS" class="btn" >Voir le cours</a>
+            </div>
+
+            <!--
+            <div class="card">
+                <div>
+                    <h2>IA</h2>
+                    <p>Sujets de TP et consignes pour les rendus de fin de semestre.</p>
+                </div>
+                <a href="Cours_TPs/IA" class="btn">Voir le cours</a>
+            </div>
+            -->
+        </div>
+    </container>
+
+    <footer>
+        <p>© 2026 - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
