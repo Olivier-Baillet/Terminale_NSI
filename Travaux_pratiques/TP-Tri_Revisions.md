@@ -196,30 +196,3 @@ def tri_insertion(tab: list) -> None:
         #on insère l'élément à sa place
         tab[] =
 ```
-
-```python
-def tri_insertion(T):
-    for i in range(1, len(T)):
-        x = T[i]
-        j = i
-        while j > 0 and x < T[j-1]:
-            T[j] = T[j-1]
-            j = j - 1
-        T[j] = x
-```
-
-```python
-def echange(T, i, j):
-    """échange T[i] et T[j] dans le tableau T"""
-    temp = T[i]
-    T[i] = T[j]
-    T[j] = temp
-
-def tri_selection(T):
-    for i in range(len(T)-1):
-        ind_min = i
-        for j in range(i+1, len(T)):
-            if T[j] < T[ind_min]:
-                ind_min = j
-        echange(T, i, ind_min)
-```
