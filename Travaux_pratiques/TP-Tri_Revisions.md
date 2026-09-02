@@ -94,7 +94,7 @@ plt.plot(tailles, temps)
 plt.show()
 ```
 
-<aside>
+<aside markdown="1">
 💡
 
 Debian / Ubuntu: `sudo apt-get install python3-matplotlib`
