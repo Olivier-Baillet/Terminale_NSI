@@ -76,4 +76,4 @@ Comment doit-il procéder pour trier toute la pile de crêpes?
     [149, 117, 131, 125, 142]
     ```
     
-3. Écrire une fonction récursive `ordonner(lst, k)` qui ordonne la liste `lst` à partir de l'indice `k`.
+3. Écrire une fonction `ordonner(lst, k)` qui ordonne la liste `lst` à partir de l'indice `k`.
