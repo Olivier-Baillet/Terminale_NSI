@@ -437,20 +437,18 @@ Instancions le joueur Nans Ducuing
 >>> nducuing = Joueur("Nans DUCUING", "UBB", 34)
 ```
 
-![image](https://glassus.github.io/terminale_nsi/T2_Programmation/2.1_Programmation_Orientee_Objet/data/ducuing.png)
-
 ![*Notre cobaye*](image%201.png)
 
 *Notre cobaye*
 
 ### **3.2.1 Les `setters`**
 
-Supposons maintenant que ce joueur change de club, pour aller de l'UBB à Perpignan.
+Supposons maintenant que ce joueur change de club, pour aller de l'UBB à Lille.
 
 Il serait naturel de faire ceci :
 
 ```python
->>> nducuing.club = "Perpignan"
+>>> nducuing.club = "Lille"
 ```
 
 Cela marche bien, mais... C'est contraire à l'esprit de la Programmation Orientée Objet. Ce paradigme milite pour une encapsulation des objets, qui interdisent le plus possible l'accès direct à leurs attributs.
@@ -473,7 +471,7 @@ class Joueur :
 Le changement de club se fera maintenant par l'appel :
 
 ```python
->>> nducuing.mutation("Perpignan")
+>>> nducuing.mutation("Lille")
 ```
 
 Ce type de méthode s'appelle un `setter`.
