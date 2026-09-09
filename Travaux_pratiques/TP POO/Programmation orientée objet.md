@@ -443,12 +443,12 @@ Instancions le joueur Nans Ducuing
 
 ### **3.2.1 Les `setters`**
 
-Supposons maintenant que ce joueur change de club, pour aller de l'UBB à Lille.
+Supposons maintenant que ce joueur change de club, pour aller de l'UBB à Denain .
 
 Il serait naturel de faire ceci :
 
 ```python
->>> nducuing.club = "Lille"
+>>> nducuing.club = "Denain "
 ```
 
 Cela marche bien, mais... C'est contraire à l'esprit de la Programmation Orientée Objet. Ce paradigme milite pour une encapsulation des objets, qui interdisent le plus possible l'accès direct à leurs attributs.
@@ -471,7 +471,7 @@ class Joueur :
 Le changement de club se fera maintenant par l'appel :
 
 ```python
->>> nducuing.mutation("Lille")
+>>> nducuing.mutation("Denain ")
 ```
 
 Ce type de méthode s'appelle un `setter`.
