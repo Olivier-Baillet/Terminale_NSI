@@ -18,7 +18,7 @@ Les structures que nous allons voir peuvent s'envisager sous deux aspects :
 > • L'**implémentation** va désigner tous les mécanismes techniques qui sont mis en œuvre pour que (par exemple) le mouvement de rotation du volant aboutisse à un changement de direction des roues.
 > • La standardisation des interfaces fait qu'un utilisateur peut passer sans problème d'une voiture à une autre, même si l'implémentation est complètement différente.
 > 
-> ![image.png](Pr%C3%A9ambule_interface%20%E2%89%A0_impl%C3%A9mentation/image.png)
+> ![image.png](Préambule_interface_implémentation/image.png)
 > 
 
 Nous avons déjà abordé ces deux aspects lors de la découverte de la Programmation Orientée Objet.
@@ -109,7 +109,7 @@ Ils doivent donc transformer la pile en file : lors de la mise en rayon de nouve
 
 Certains dispositifs permettent de le faire naturellement :Ci-dessous, une file... de piles (électriques). Le chargement par le haut du distributeur fait que celle qui sera sortie (en bas) sera celle qui aura été rentrée en premier (par le haut). Ce FIFO est donc provoqué naturellement par la gravité (et un peu d'astuce).
 
-![image.png](Pr%C3%A9ambule_interface%20%E2%89%A0_impl%C3%A9mentation/image%201.png)
+![image.png](Préambule_interface_implémentation/image%201.png)
 
 *On notera que cette problématique est universelle : voir par exemple [ce site](https://www.mecalux.fr/blog/methode-lifo-fifo-peps).*
 
