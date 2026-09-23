@@ -61,9 +61,9 @@ Test de l'implémentation :
 
 ```
 
-### **3.2.2 À l'aide d'une liste chaînée et de la classe `Cellule` créée au 2.3**
+### **3.2.2 À l'aide d'une liste chaînée et de la classe `Cellule`**
 
-Au **2.3** nous avons créé la classe `Cellule` :
+Nous avons créé la classe `Cellule` :
 
 ```python
 class Cellule :
@@ -105,10 +105,10 @@ Exemple d'utilisation :
 page actuelle : lemonde.fr
 >>> n.visite('google.fr')
 page actuelle : google.fr
->>> n.visite('lyceemauriac.fr')
-page actuelle : lyceemauriac.fr
+>>> n.visite('lyceemousseron.fr')
+page actuelle : lyceemousseron.fr
 >>> n.back()
-page quittée : lyceemauriac.fr
+page quittée : lyceemousseron.fr
 >>> n.back()
 page quittée : google.fr
 ```
