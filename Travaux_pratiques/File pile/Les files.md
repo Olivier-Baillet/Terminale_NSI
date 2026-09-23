@@ -36,16 +36,18 @@ On considère l'enchaînement d'opérations ci-dessous. Écrire à chaque étape
 
 L'objectif est de créer une classe `File`, disposant des méthodes suivantes :
 
-• `est_vide` : indique si la file est vide. (renvoie un booléen)
-• `enfile` : insère un élément (passé en paramètre) en queue de file. (ne renvoie rien)
-• `defile` : renvoie la valeur de l'élément en tête de la file ET le supprime de la file.
+- `est_vide` : indique si la file est vide. (renvoie un booléen)
+- `enfile` : insère un élément (passé en paramètre) en queue de file. (ne renvoie rien)
+- `defile` : renvoie la valeur de l'élément en tête de la file ET le supprime de la file.
+
 Nous y ajouterons comme précédemment la méthode facultative suivante :
-• `__repr__` : permet d'afficher la file sous forme agréable (par ex : `|3|6|2|5|`)
+- `__repr__` : permet d'afficher la file sous forme agréable (par ex : `|3|6|2|5|`)
 
 ### **Exercice 8**
 
 Créer la classe ci-dessus. Là encore, le type `list` de Python est peut être utilisé.
 Penser à aller voir [ici](https://docs.python.org/fr/3/tutorial/datastructures.html#more-on-lists) les méthodes des objets de types `list`, notamment la méthode `insert`.
+
 
 **Remarque :**
 
@@ -59,9 +61,9 @@ Comment créer une file avec 2 piles ?
 
 L'idée est la suivante : on crée une pile d'entrée et une pile de sortie.
 
-• quand on veut enfiler, on empile sur la pile d'entrée.
-• quand on veut défiler, on dépile sur la pile de sortie.
-• si celle-ci est vide, on dépile entièrement la pile d'entrée dans la pile de sortie.
+- quand on veut enfiler, on empile sur la pile d'entrée.
+- quand on veut défiler, on dépile sur la pile de sortie.
+- si celle-ci est vide, on dépile entièrement la pile d'entrée dans la pile de sortie.
 
 ### **Exercice 9**
 
