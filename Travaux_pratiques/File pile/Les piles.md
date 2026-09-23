@@ -34,13 +34,13 @@ On prendra pour convention que la tête de la pile est à droite.
 ## **3.2 Implémentation(s) d'une pile**
 
 L'objectif est de créer une classe `Pile`. L'instruction `Pile()` créera une pile vide. Chaque objet `Pile` disposera des méthodes suivantes :
-• `est_vide` : indique si la pile est vide (renvoie un booléen)
-• `empile` : insère un élément (passé en paramètre) en haut de la pile. Ne renvoie rien.
-• `depile` : renvoie la valeur de l'élément en haut de la pile ET le supprime de la pile.
+- `est_vide` : indique si la pile est vide (renvoie un booléen)
+- `empile` : insère un élément (passé en paramètre) en haut de la pile. Ne renvoie rien.
+- `depile` : renvoie la valeur de l'élément en haut de la pile ET le supprime de la pile.
 
 Ces 3 méthodes sont essentielles et se retrouveront systématiquement dans chaque interface. Nous y ajouterons, uniquement par commodité, la méthode suivante :
 
-• `__repr__` : permet d'afficher la pile sous forme agréable (par ex : `|3|6|2|5|`)
+- `__repr__` : permet d'afficher la pile sous forme agréable (par ex : `|3|6|2|5|`)
 
 ### **3.2.1 À l'aide du type `list` de Python**
 
