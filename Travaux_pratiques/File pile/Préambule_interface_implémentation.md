@@ -6,17 +6,17 @@
 
 Les structures que nous allons voir peuvent s'envisager sous deux aspects :
 
-• le côté utilisateur, qui utilisera une interface pour manipuler les données.
-• le côté concepteur, qui aura choisi une implémentation pour construire la structure de données.
+- le côté utilisateur, qui utilisera une interface pour manipuler les données.
+- le côté concepteur, qui aura choisi une implémentation pour construire la structure de données.
 
 > 
 > 
 > 
 > ### **Un exemple d'interface et d'implémentation**
 > 
-> • Le volant et les pédales d'une voiture constituent une partie de son **interface**.
-> • L'**implémentation** va désigner tous les mécanismes techniques qui sont mis en œuvre pour que (par exemple) le mouvement de rotation du volant aboutisse à un changement de direction des roues.
-> • La standardisation des interfaces fait qu'un utilisateur peut passer sans problème d'une voiture à une autre, même si l'implémentation est complètement différente.
+> - Le volant et les pédales d'une voiture constituent une partie de son **interface**.
+> - L'**implémentation** va désigner tous les mécanismes techniques qui sont mis en œuvre pour que (par exemple) le mouvement de rotation du volant aboutisse à un changement de direction des roues.
+> - La standardisation des interfaces fait qu'un utilisateur peut passer sans problème d'une voiture à une autre, même si l'implémentation est complètement différente.
 > 
 > ![image.png](Préambule_interface_implémentation/image.png)
 > 
@@ -30,9 +30,9 @@ Le principe d'encapsulation fait que l'utilisateur n'a qu'à connaître l'existe
 
 En informatique comme dans la vie courante, il est conseillé d'adapter sa manière de stocker et de traiter des données en fonction de la nature de celles-ci :
 
-• Le serveur d'un café, chargé de transporter les boissons du comptoir aux tables des clients, n'utilisera pas un sac en plastique pour faire le transport : il préfèrera un plateau.
-• Le chercheur de champignons, lui, n'utilisera pas un plateau pour stocker ses trouvailles : il préfèrera un panier.
-• Pour stocker des chaussettes, on préfèrera les entasser dans un tiroir (après les avoir appairées), plutôt que de les suspendre à des cintres.
+- Le serveur d'un café, chargé de transporter les boissons du comptoir aux tables des clients, n'utilisera pas un sac en plastique pour faire le transport : il préfèrera un plateau.
+- Le chercheur de champignons, lui, n'utilisera pas un plateau pour stocker ses trouvailles : il préfèrera un panier.
+- Pour stocker des chaussettes, on préfèrera les entasser dans un tiroir (après les avoir appairées), plutôt que de les suspendre à des cintres.
 
 De même en informatique, pour chaque type de données, pour chaque utilisation prévue, une structure particulière de données se revèlera (peut-être) plus adaptée qu'une autre.
 
