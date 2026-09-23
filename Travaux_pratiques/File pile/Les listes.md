@@ -19,7 +19,8 @@ Lorsque l'implémentation de la liste fait apparaître une chaîne de valeurs, c
 - Chaque cellule contient donc une valeur et un lien vers la cellule suivante.
 - Une liste peut être vide (la liste vide est notée `x` ou bien `None` sur les schémas)
 
-Une conséquence de cette implémentation sous forme de liste chaînée est la non-constance du temps d'accès à un élément de liste : pour accéder au 3ème élément, il faut obligatoirement passer par les deux précédents.
+Une conséquence de cette implémentation sous forme de liste chaînée est la non-constance du temps d'accès à un élément de liste :
+    pour accéder au 3ème élément, il faut obligatoirement passer par les deux précédents.
 
 **À retenir :** dans une liste chaînée, le temps d'accès aux éléments n'est pas constant.
 
@@ -75,22 +76,23 @@ Néanmoins, l'implémentation qui a été choisie par les concepteurs de Python 
 
 **Dans une liste chaînée :**
 
-- le temps d'accès à n'importe quel élément peut être lent (proportionnel à la position de l'élément dans la liste). Le temps d'accès est en $O(n)$ .
-- l'insertion d'un élément à l'intérieur de la liste est rapide : il y a simplement à modifier la valeur du lien de la cellule à gauche de l'endroit d'insertion. L'action d'insérer est donc en $O(1)$ . Toutefois, avant d'arriver à l'endroit d'insertion, il faut avoir parcouru toutes les cellules précédentes ! Le temps total d'insertion est donc lui aussi linéaire, en  .
+- le temps d'accès à n'importe quel élément peut être lent (proportionnel à la position de l'élément dans la liste). Le temps d'accès est en $$O(n)$$ .
+- l'insertion d'un élément à l'intérieur de la liste est rapide : il y a simplement à modifier la valeur du lien de la cellule à gauche de l'endroit d'insertion. L'action d'insérer est donc en $$O(1)$$ . Toutefois, avant d'arriver à l'endroit d'insertion, il faut avoir parcouru toutes les cellules précédentes ! Le temps total d'insertion est donc lui aussi linéaire, en  .
 
 Nous nous servirons parfois du type `list` de Python dans la suite de ce cours, mais il ne faut pas oublier qu'il n'est pas un «vrai» type `list`.
 
 ## **2.5 Un exemple d'interface pour les listes**
 
 Imaginons que nous possédons une interface offrant les fonctionnalités suivantes :
-• `Liste()` : crée une liste vide.
-• `est_vide` : indique si la liste est vide. (renvoie un booléen)
-• `ajoute_tete` : insère un élément (passé en paramètre) en tête de liste. (ne renvoie rien)
-• `renvoie_tete` : renvoie la valeur de l'élément en tête de liste ET le supprime de la liste.
+- `Liste()` : crée une liste vide.
+- `est_vide` : indique si la liste est vide. (renvoie un booléen)
+- `ajoute_tete` : insère un élément (passé en paramètre) en tête de liste. (ne renvoie rien)
+- `renvoie_tete` : renvoie la valeur de l'élément en tête de liste ET le supprime de la liste.
 
 ### **Exercice 2**
 
-On considère l'enchaînement d'opérations ci-dessous. Écrire à chaque étape l'état de la liste `lst` et la valeur éventuellement renvoyée. On considèrera que la tête de la liste est à gauche.
+On considère l'enchaînement d'opérations ci-dessous.
+Écrire à chaque étape l'état de la liste `lst` et la valeur éventuellement renvoyée. On considèrera que la tête de la liste est à gauche.
 
 ```python
 1. lst = Liste()      
