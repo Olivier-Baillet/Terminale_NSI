@@ -1,3 +1,9 @@
+<!-- 1. Ton fichier de configuration -->
+<script src="{{ '/assets/js/mathjax-config.js' | relative_url }}"></script>
+
+<!-- 2. Le script MathJax officiel -->
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 # Les files
 
 ![](https://glassus.github.io/terminale_nsi/T1_Structures_de_donnees/1.1_Listes_Piles_Files/data/giffile.webp)
