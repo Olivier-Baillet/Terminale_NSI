@@ -1,3 +1,9 @@
+<!-- 1. Ton fichier de configuration -->
+<script src="{{ '/assets/js/mathjax-config.js' | relative_url }}"></script>
+
+<!-- 2. Le script MathJax officiel -->
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 # Les listes
 
 ## **2.1 Définition générale**
