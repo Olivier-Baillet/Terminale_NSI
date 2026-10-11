@@ -3,18 +3,6 @@
 ## **Exercice 1**
 
 Écrire une fonction récursive `puissance` qui prend en paramètres deux nombres `x` et `n` qui renvoie le nombre .
-
-- **Correction**
-    
-    ```python
-    def puissance(x, n):
-        if n == 0:
-            return 1
-        else:
-            return x * puissance(x, n-1)
-    ```
-    
-    ---
     
 
 ## **Exercice 2**
@@ -36,18 +24,6 @@ La [conjecture de Syracuse](https://fr.wikipedia.org/wiki/Conjecture_de_Syracuse
 
 **Q1.** Écrire une fonction récursive `syracuse` qui prend en paramètres une entier `n` et qui écrivant tous les termes de la suite de Syracuse commençant à `n` , et s'arrêtant (on l'espère...) à la valeur 1.
 
-- **Correction**
-    
-    ```python
-    def syracuse(n):
-        print(n)
-        if n == 1:
-            return None
-        if n % 2 == 0:
-            return syracuse(n // 2)
-        else:
-            return syracuse(3*n + 1)
-    ```
     
     ---
     
@@ -70,20 +46,6 @@ La [conjecture de Syracuse](https://fr.wikipedia.org/wiki/Conjecture_de_Syracuse
     
 
 **Q2.** On appelle «temps de vol» le nombre d'étapes nécessaires avant de retomber sur 1. Modifier la fonction précédente afin qu'elle affiche le temps de vol pour tout nombre `n`.
-
-- **Correction**
-    
-    ```python
-    def syracuse(n, t=0):
-        print(n)
-        if n == 1:
-            print('temps de vol :', t)
-            return None
-        if n % 2 == 0:
-            syracuse(n // 2, t+1)
-        else:
-            syracuse(3*n + 1, t+1)
-    ```
     
     ---
     
@@ -96,31 +58,6 @@ Reproduire le dessin suivant, à l'aide du module `turtle`.
 
 ![](https://glassus.github.io/terminale_nsi/T2_Programmation/2.2_Recursivite/data/carres_turtle.png)
 
-- **Correction**
-    
-    ```python
-    from turtle import *
-    def carre(c):
-        for k in range(4):
-            forward(c)
-            right(90)
-    
-    def base(c):
-        carre(c)
-        forward(c/2)
-        right(45)
-    
-    def trace(n, c):
-        if n == 0 :
-            return None
-        else :
-            base(c)
-            c = c/(2**0.5)
-            trace(n-1, c)
-    
-    trace(5, 200)
-    ```
-    
     ---
     
 
@@ -130,19 +67,7 @@ Proposer une nouvelle fonction récursive `puissance_mod` qui prend en paramètr
 
 - si est pair,
 - sinon
-- **Correction**
-    
-    ```python
-    def puissance_mod(x, n):
-        if n == 0 :
-            return 1
-        else :
-            if n % 2 == 0:
-                return puissance_mod(x*x, n//2)
-            else :
-                return x * puissance_mod(x*x, (n-1)//2)
-    ```
-    
+
     ---
     
 
@@ -181,21 +106,6 @@ Les techniques de *slicing* (hors-programme) permettent de couper une liste en d
 [17, 18, 20, 22]
 ```
 
-- **Correction**
-    
-    ```python
-    def dicho_recursive(lst, val):
-        print(lst) # pour voir la taille de la liste diminuer
-        if len(lst) == 1:   # cas de base
-            return lst[0] == val:
-        else :              # cas récursif
-            ind_milieu = len(lst)//2
-            if lst[ind_milieu] > val:
-                return recherche(lst[:ind_milieu], val)
-            else:
-                return recherche(lst[ind_milieu:], val)
-    ```
-    
     ---
     
 
@@ -221,25 +131,7 @@ Une version jouable en ligne peut être trouvée [ici](https://www.mathsisfun.co
 
 Écrire une fonction récursive `hanoi(n, depart, inter, arrivee)` qui donnera la suite d'instructions (sous la forme " A vers C") pour faire passer une pile de taille n de `depart` vers `arrivee` en prenant `inter` comme intermédiaire.
 
-- **Correction**
-    
-    ```python
-    def hanoi(n, depart, inter, arrivee):
-    ''' n : nombre d'assiettes dans la pile
-        # depart : la pile de départ('A', 'B' ou 'C')
-        # inter : la pile intermédaire('A', 'B' ou 'C')
-        # arrivee : la pile d'arrivée ('A', 'B' ou 'C') '''
-    
-        if n == 1 :
-            print(depart + ' vers ' + arrivee)
-        else :
-            hanoi(n-1, depart, arrivee, inter)
-            print(depart + ' vers ' + arrivee)
-            hanoi(n-1, inter, depart, arrivee)
-    
-    hanoi(5, 'A', 'B', 'C')
-    ```
-    
+
     ---
     
 
@@ -265,58 +157,14 @@ L'idée est de répéter de manière récursive la transformation ci-dessous : c
 
 - l'instruction de tracé n'a lieu que quand `n` vaut 0.
 - l'étape `n` fait 4 appels successifs à l'étape `n-1`.
-- **Correction**
-    
-    ```python
-    from turtle import *
-    
-    def floc(n, l):
-        if n == 0:
-            forward(l)
-        else:
-            floc(n-1,l/3)
-            left(60)
-            floc(n-1,l/3)
-            right(120)
-            floc(n-1,l/3)
-            left(60)
-            floc(n-1,l/3)
-    
-    speed(0)
-    ```
+
     
     ---
     
 
 **Q2.** Créer une fonction `triangle(n, l)` qui trace le flocon complet.
 
-- **Correction**
-    
-    ```python
-    from turtle import *
-    
-    def floc(n, l):
-        if n == 0:
-            forward(l)
-        else:
-            floc(n-1,l/3)
-            left(60)
-            floc(n-1,l/3)
-            right(120)
-            floc(n-1,l/3)
-            left(60)
-            floc(n-1,l/3)
-    
-    speed(0)
-    
-    def triangle(n,l):
-        for _ in range(3):
-            floc(n,l)
-            right(120)
-    
-    triangle(5,400)
-    ```
-    
+
     ---
     
 
@@ -327,32 +175,7 @@ L'idée est de répéter de manière récursive la transformation ci-dessous : c
 
 ![image](https://glassus.github.io/terminale_nsi/T2_Programmation/2.2_Recursivite/data/diffusion.png)
 
-- **Correction**
-    
-    ```python
-    def propager(grid, i, j, color):
-        if grid[i,j].green != 180:
-            return None
-    
-        grid[i,j].green = color
-    
-        if (i-1) >= 0:
-            propager(grid, i-1, j, color)
-    
-        if (i+1) < n:
-            propager(grid, i+1, j, color)
-    
-        if (j-1) >= 0:
-            propager(grid, i, j-1, color)
-    
-        if (j+1) < n :
-            propager(grid, i, j+1, color)
-    
-    grid = initgrid()
-    propager(grid,3,3,0)
-    grid.show()
-    ```
-    
+
     ---
     
 
