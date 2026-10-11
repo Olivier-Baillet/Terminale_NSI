@@ -138,7 +138,7 @@ Ce flocon est une structure [fractale](https://fr.wikipedia.org/wiki/Fractale), 
 
 L'idée est de répéter de manière récursive la transformation ci-dessous : chaque segment de longueur `l` donne naissance à 4 segments de longueur `l/3`, en construisant une pointe de triangle équilatéral sur le deuxième tiers du segment.
 
-![](https://cgouygou.github.io/TNSI/T02_Programmation/images/segmentkoch.png)
+![](https://glassus.github.io/terminale_nsi/T2_Programmation/2.2_Recursivite/data/ex3b.png)
 
 **Animation des premières étapes:**
 
