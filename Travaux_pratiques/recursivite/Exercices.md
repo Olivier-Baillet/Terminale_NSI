@@ -138,21 +138,21 @@ Ce flocon est une structure [fractale](https://fr.wikipedia.org/wiki/Fractale), 
 
 L'idée est de répéter de manière récursive la transformation ci-dessous : chaque segment de longueur `l` donne naissance à 4 segments de longueur `l/3`, en construisant une pointe de triangle équilatéral sur le deuxième tiers du segment.
 
-![](https://glassus.github.io/terminale_nsi/T2_Programmation/2.2_Recursivite/data/ex2.png)
+![](https://cgouygou.github.io/TNSI/T02_Programmation/images/segmentkoch.png)
 
-**Q1.** Créer une fonction récursive `floc(n, l)` qui trace à une «profondeur» `n` un segment de longueur `l` .
+**Animation des premières étapes:**
 
-![](https://glassus.github.io/terminale_nsi/T2_Programmation/2.2_Recursivite/data/ex3b.png)
+![](https://cgouygou.github.io/TNSI/T02_Programmation/images/Von_Koch_curve.gif)
 
-**Indications**
+**Consignes :**
 
-- l'instruction de tracé n'a lieu que quand `n` vaut 0.
-- l'étape `n` fait 4 appels successifs à l'étape `n-1`.
+1. Écrire une fonction récursive `segment` qui prend un entier `n` et un entier `l` et qui trace le segment de longueur `l` correspondant à l'étape `n`.
+2. Écrire une fonction `flocon` qui trace le flocon entier (mêmes paramètres).
 
-    
-    
+**Indications :**
 
-**Q2.** Créer une fonction `triangle(n, l)` qui trace le flocon complet.
+- Le tracé ne se fait qu'à l'étape 0;
+- l'étape `n` fait 4 appels récursifs à l'étape `n1` .
 
 
     
@@ -179,24 +179,3 @@ Exercice 1 du sujet [Centres Étrangers J2 2022](https://glassus.github.io/termi
 
 Exercice 1 du [sujet Amérique du Nord J2 2024](https://glassus.github.io/terminale_nsi/T6_Annales/data/2024/24-NSIJ2AN1.pdf)
 
-## **Exercice 13**
-
-Le [flocon de Koch](https://fr.wikipedia.org/wiki/Flocon_de_Koch) est une [figure fractale](https://fr.wikipedia.org/wiki/Fractale) obtenue par itérations successives d'une même transformation sur chacun de ses segments.
-
-La transformation est la suivante: chaque segment de longueur `l` donne naissance à 4 segments de longueur `l/3`, en construisant une pointe de triangle équilatéral sur le deuxième tiers du segment.
-
-![](https://cgouygou.github.io/TNSI/T02_Programmation/images/segmentkoch.png)
-
-**Animation des premières étapes:**
-
-![](https://cgouygou.github.io/TNSI/T02_Programmation/images/Von_Koch_curve.gif)
-
-**Consignes :**
-
-1. Écrire une fonction récursive `segment` qui prend un entier `n` et un entier `l` et qui trace le segment de longueur `l` correspondant à l'étape `n`.
-2. Écrire une fonction `flocon` qui trace le flocon entier (mêmes paramètres).
-
-**Indications :**
-
-- Le tracé ne se fait qu'à l'étape 0;
-- l'étape `n` fait 4 appels récursifs à l'étape `n1` .
