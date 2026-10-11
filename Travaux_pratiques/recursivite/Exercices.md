@@ -22,32 +22,27 @@ La [conjecture de Syracuse](https://fr.wikipedia.org/wiki/Conjecture_de_Syracuse
 
 *Prenons un nombre  : si  est pair, on le divise par 2, sinon on le multiplie par 3 puis on ajoute 1. On recommence cette opération tant que possible. Au bout d'un certain temps, on finira toujours par tomber sur le nombre 1.*
 
-**Q1.** Écrire une fonction récursive `syracuse` qui prend en paramètres une entier `n` et qui écrivant tous les termes de la suite de Syracuse commençant à `n` , et s'arrêtant (on l'espère...) à la valeur 1.
+**Q1.** Écrire une fonction récursive `syracuse` qui prend en paramètres une entier `n` et qui écrivant tous les termes de la suite de Syracuse commençant à `n` , et s'arrêtant (on l'espère...) à la valeur 1.    
+    
+Remarque : comme notre fonction `syracuse` ne renvoie pas de valeur numérique (elle ne fait qu'afficher une valeur), le `return` du test de parité est en fait inutile.
 
-    
-    ---
-    
-    Remarque : comme notre fonction `syracuse` ne renvoie pas de valeur numérique (elle ne fait qu'afficher une valeur), le `return` du test de parité est en fait inutile.
-    
-    Mais le `return` du cas de base est lui primordial pour que le code s'arrête !
-    
-    ```python
-    def syracuse(n):
-        print(n)
-        if n == 1:
-            return None
-        if n % 2 == 0:
-            syracuse(n // 2)
-        else:
-            syracuse(3*n + 1)
-    ```
-    
-    ---
+Mais le `return` du cas de base est lui primordial pour que le code s'arrête !
+
+```python
+def syracuse(n):
+    print(n)
+    if n == 1:
+        return None
+    if n % 2 == 0:
+        syracuse(n // 2)
+    else:
+        syracuse(3*n + 1)
+```
+
     
 
 **Q2.** On appelle «temps de vol» le nombre d'étapes nécessaires avant de retomber sur 1. Modifier la fonction précédente afin qu'elle affiche le temps de vol pour tout nombre `n`.
     
-    ---
     
 
 ## **Exercice 4**
@@ -58,7 +53,6 @@ Reproduire le dessin suivant, à l'aide du module `turtle`.
 
 ![](https://glassus.github.io/terminale_nsi/T2_Programmation/2.2_Recursivite/data/carres_turtle.png)
 
-    ---
     
 
 ## **Exercice 5**
@@ -68,7 +62,6 @@ Proposer une nouvelle fonction récursive `puissance_mod` qui prend en paramètr
 - si est pair,
 - sinon
 
-    ---
     
 
 ## **Exercice 6**
@@ -106,7 +99,6 @@ Les techniques de *slicing* (hors-programme) permettent de couper une liste en d
 [17, 18, 20, 22]
 ```
 
-    ---
     
 
 ## **Exercice 7**
@@ -132,7 +124,6 @@ Une version jouable en ligne peut être trouvée [ici](https://www.mathsisfun.co
 Écrire une fonction récursive `hanoi(n, depart, inter, arrivee)` qui donnera la suite d'instructions (sous la forme " A vers C") pour faire passer une pile de taille n de `depart` vers `arrivee` en prenant `inter` comme intermédiaire.
 
 
-    ---
     
 
 ## **Exercice 8**
@@ -159,13 +150,11 @@ L'idée est de répéter de manière récursive la transformation ci-dessous : c
 - l'étape `n` fait 4 appels successifs à l'étape `n-1`.
 
     
-    ---
     
 
 **Q2.** Créer une fonction `triangle(n, l)` qui trace le flocon complet.
 
 
-    ---
     
 
 ## **Exercice 9**
@@ -176,7 +165,6 @@ L'idée est de répéter de manière récursive la transformation ci-dessous : c
 ![image](https://glassus.github.io/terminale_nsi/T2_Programmation/2.2_Recursivite/data/diffusion.png)
 
 
-    ---
     
 
 ## **Exercice 10**
