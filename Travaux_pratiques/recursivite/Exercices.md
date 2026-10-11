@@ -153,29 +153,17 @@ L'idée est de répéter de manière récursive la transformation ci-dessous : c
 
 - Le tracé ne se fait qu'à l'étape 0;
 - l'étape `n` fait 4 appels récursifs à l'étape `n1` .
-
-
     
 
 ## **Exercice 9**
 
-1. [Exercice 43.2 de la BNS 2025](https://glassus.github.io/terminale_nsi/T6_6_Epreuve_pratique/BNS_2025/#exercice-432)
-2. Application sur Capytale à retrouver [ici](https://capytale2.ac-paris.fr/web/c/ffb5-785788/mlc)
-
-![image](https://glassus.github.io/terminale_nsi/T2_Programmation/2.2_Recursivite/data/diffusion.png)
-
-
-    
+Exercice 4 du sujet [Amérique du Nord J1 2022](https://glassus.github.io/terminale_nsi/T6_Annales/data/2022/2022_Amerique_Nord_J1.pdf)
 
 ## **Exercice 10**
 
-Exercice 4 du sujet [Amérique du Nord J1 2022](https://glassus.github.io/terminale_nsi/T6_Annales/data/2022/2022_Amerique_Nord_J1.pdf)
-
-## **Exercice 11**
-
 Exercice 1 du sujet [Centres Étrangers J2 2022](https://glassus.github.io/terminale_nsi/T6_Annales/data/2022/2022_Centres_Etrangers_J2.pdf)
 
-## **Exercice 12**
+## **Exercice 11**
 
 Exercice 1 du [sujet Amérique du Nord J2 2024](https://glassus.github.io/terminale_nsi/T6_Annales/data/2024/24-NSIJ2AN1.pdf)
 
