@@ -8,7 +8,7 @@
 
 ## 1.1. Définition
 
-<aside>
+<aside markdown="1">
 
 **Fonction récursive**
 
@@ -46,7 +46,7 @@ Disons-le clairement : au-delà de la blague pour initiés (dont vous faites par
 
 Ce «cas de base» sera aussi appelé «condition d'arrêt», puisque la très grande majorité des algorithmes récursifs peuvent être perçus comme des escaliers qu'on descend marche par marche, jusqu'au sol qui assure notre arrêt.
 
-<aside>
+<aside markdown="1">
 
 **Terminaison possible**
 
@@ -181,7 +181,7 @@ Pour gérer ces différents appels, le système utilise une **pile d'exécution*
 
 D'où l'importance de l'existence du cas de base, et de s'assurer qu'il sera bien atteint...
 
-<aside>
+<aside markdown="1">
 
 **Limitation de la taille de la pile**
 
