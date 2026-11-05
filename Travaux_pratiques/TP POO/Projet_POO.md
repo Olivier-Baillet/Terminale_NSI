@@ -68,3 +68,69 @@ L'**héritage** et le polymorphisme sont en extension : si vous avez de l'avance
 ## Pour bien démarrer
 
 Commencez petit : une seule classe qui fonctionne et que vous testez vaut mieux que cinq classes à moitié écrites.
+
+## Étapes intermédiaires si vous êtes bloqués
+
+Si un palier vous semble trop gros, découpez-le avec ces mini-étapes. Testez chacune avant de passer à la suivante.
+
+### Palier 1 : conception
+
+1. Décrivez votre univers en une phrase (« un jardin où des plantes poussent et ont besoin d'eau »).
+2. Listez 3 à 5 éléments de cet univers. Entourez ceux dont l'état change : ce sont vos entités.
+3. Pour chaque entité, notez 2 ou 3 caractéristiques numériques (points de vie, énergie, niveau d'eau…).
+4. Pour chaque entité, notez une action sous forme de verbe (attaquer, manger, arroser).
+5. Dessinez un rectangle par classe : attributs en haut, méthodes en bas.
+
+### Palier 2 : une entité
+
+1. Écrivez une classe avec seulement un nom et un attribut `vie`, puis créez un objet et affichez `e.vie`.
+2. Ajoutez `__str__` et testez avec `print(e)`.
+3. Écrivez `subir(self, degats)` qui retire des points de vie. Testez avec une valeur simple.
+4. Empêchez la vie de passer sous 0 (pensez à `max(0, ...)`).
+5. Ajoutez `est_actif()`, qui renvoie `True` tant que la vie est supérieure à 0.
+6. Écrivez 3 `assert` qui vérifient ces comportements.
+
+Point de départ pour les étapes 1 et 2 :
+
+```python
+class Entite:
+    def __init__(self, nom, vie):
+        self.nom = nom
+        self.vie = vie
+
+    def __str__(self):
+        return f"{self.nom} ({self.vie} PV)"
+```
+
+### Palier 3 : interaction entre deux entités
+
+1. Sur papier, écrivez ce qui doit changer chez B quand A agit sur lui.
+2. Écrivez `agir_sur(self, cible)` qui appelle seulement `cible.subir(5)`, avec une valeur fixe.
+3. Créez deux entités et affichez-les avant et après l'action.
+4. Remplacez le 5 par un attribut `force` de l'entité qui agit.
+5. Écrivez l'action inverse (un soin) sur le même modèle.
+
+### Palier 4 : objets et inventaire
+
+1. Créez une classe `Objet` avec un nom et une valeur d'effet.
+2. Écrivez `utiliser(self, cible)` qui modifie une caractéristique de la cible.
+3. Donnez à l'entité un attribut `inventaire` (liste vide) et une méthode `ajouter(objet)`.
+4. Écrivez `utiliser_objet(nom)` : elle cherche l'objet dans la liste et appelle `utiliser`.
+5. Faites disparaître l'objet de la liste s'il est à usage unique.
+6. Testez le cas où l'objet demandé n'est pas dans l'inventaire.
+
+### Palier 5 : le moteur
+
+1. Écrivez une boucle de 3 tours qui affiche l'état de toutes les entités.
+2. À chaque tour, faites agir chaque entité active sur la première autre entité active.
+3. Remplacez ce choix fixe par `random.choice`, en ajoutant `random.seed(1)` au début pour des résultats reproductibles.
+4. Arrêtez la boucle quand il reste une seule entité active, puis affichez le gagnant.
+5. Remplacez les choix automatiques par un menu pour un joueur.
+
+### Quand vous êtes bloqués
+
+1. Lisez la dernière ligne du message d'erreur Python : elle dit quel type d'erreur et où.
+2. Ajoutez des `print` pour voir la valeur de vos variables.
+3. Réduisez le problème à deux objets et une seule méthode.
+4. Expliquez votre code à voix haute à un autre membre du groupe.
+5. Si ça ne suffit pas, appelez votre professeur en montrant ce que vous avez déjà essayé.
