@@ -144,8 +144,6 @@ print(m1 is m2, m1 is m3)
 
 # Corrigé
 
-*À distribuer après la séance.*
-
 ## Exercice 1
 
 1. Faux. Python transmet l’objet automatiquement comme premier argument : on écrit `obj.methode()`.
