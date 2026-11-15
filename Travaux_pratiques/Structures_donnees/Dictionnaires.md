@@ -1,4 +1,5 @@
 # Dictionnaires
+Au préalable, on peut relire le [chapitre de Première](https://olivier-baillet.github.io/Premiere_NSI/Progression/Types_construits/Dictionnaires).
 
 # 1. Retour sur les dictionnaires
 
