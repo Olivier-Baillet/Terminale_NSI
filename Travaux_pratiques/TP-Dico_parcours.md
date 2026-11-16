@@ -280,8 +280,6 @@ for i in range(0, len(arn), 3):
 return proteine
 ```
 
-[Evaluation__Terminale_NSI.pdf](TP%20Dico%20et%20parcours/Evaluation__Terminale_NSI.pdf)
-
 ### P II
 
 1. **a.** L'instruction `flotte[26]` renvoie la valeur associée à la clé `26`, c'est-à-dire le dictionnaire `{'type': 'classique', 'etat': 1, 'station': 'Coliseum'}`.
