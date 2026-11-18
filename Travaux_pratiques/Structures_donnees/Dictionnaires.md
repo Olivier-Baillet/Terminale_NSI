@@ -23,7 +23,7 @@ Python, avec le type `dict`, utilise une table de hachage.
 
 ### **Principe d'une table de hachage**
 
-Une table de hachage est un **tableau couplé à une [fonction de hachage](https://cgouygou.github.io/TNSI/T09_Extras/Hachage/)**.
+Une table de hachage est un **tableau couplé à une fonction de hachage**.
 
 Le dictionnaire `d = {"pommes":3, "poires":0, "bananes":5}` sera implémenté dans un tableau comme celui-ci:
 
