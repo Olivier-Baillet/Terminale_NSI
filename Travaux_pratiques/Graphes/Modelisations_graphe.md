@@ -1,3 +1,31 @@
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<style>
+.rappel {
+    background-color: #eef6ff;
+    border-left: 5px solid #3182ce;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.attention {
+    background-color: #fff4df;
+    border-left: 5px solid #e6a23c;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.methode {
+    background-color: #eaf7ee;
+    border-left: 5px solid #38a169;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+</style>
+
 # 2. Modélisations d'un graphe
 
 Pour modéliser un graphe, il faut établir par convention une manière de donner les renseignements suivants :
