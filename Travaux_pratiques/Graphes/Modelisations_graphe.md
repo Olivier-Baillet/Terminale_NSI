@@ -81,11 +81,7 @@ Soit un ensemble d'amis connectés sur un réseau social quelconque. Voici les i
 - Héloïse est amie avec Béa.
 
 **Q1.** Représenter le graphe des relations dans ce réseau social (on désignera chaque individu par l'initiale de son prénom). Il est possible de faire en sorte que les arêtes ne se croisent pas !
-
-- **Correction**
-    
-    ![image](https://glassus.github.io/terminale_nsi/T1_Structures_de_donnees/1.4_Graphes/data/grapheRS.png)
-    
+ 
 
 **Q2.** Donner la matrice d'adjacence de ce graphe.
 
@@ -108,10 +104,6 @@ M_1 = \begin{pmatrix}
 $$
 </div>
 
-- **Correction**
-    
-    ![image](https://glassus.github.io/terminale_nsi/T1_Structures_de_donnees/1.4_Graphes/data/ex2_Q1.png)
-    
 
 **Q2.**
 
@@ -125,10 +117,6 @@ M2 = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-- **Correction**
-    
-    ![image](https://glassus.github.io/terminale_nsi/T1_Structures_de_donnees/1.4_Graphes/data/ex2_Q2.png)
-    
 
 **Q3.**
 
@@ -142,10 +130,7 @@ M3 = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-- **Correction**
-    
-    ![image](https://glassus.github.io/terminale_nsi/T1_Structures_de_donnees/1.4_Graphes/data/ex2_Q3.png)
-    
+  
 
 ## **2.1.5 Implémentation Python des matrices d'adjacence**
 
@@ -243,10 +228,6 @@ G1 = {
      }
 ```
 
-- **Correction**
-    
-    ![image](https://glassus.github.io/terminale_nsi/T1_Structures_de_donnees/1.4_Graphes/data/ex3_Q1.png)
-    
 
 **Q2.**
 
@@ -260,10 +241,7 @@ G2 = {
      }
 ```
 
-- **Correction**
-    
-    ![image](https://glassus.github.io/terminale_nsi/T1_Structures_de_donnees/1.4_Graphes/data/ex3_Q2.png)
-    
+
 
 # 2.3 Représentation uniquement avec des listes.
 
