@@ -7,7 +7,7 @@ Pour modéliser un graphe, il faut établir par convention une manière de donne
 
 # 2.1 Représentation par matrice d'adjacence
 
-<aside>
+<div class="rappel" markdown="1">
 💡
 
 **Principe**
@@ -17,7 +17,7 @@ Pour modéliser un graphe, il faut établir par convention une manière de donne
 
 Ce tableau s'appelle une **matrice d'adjacence** (on aurait très bien pu l'appeler aussi *matrice de voisinage*).
 
-</aside>
+</div>
 
 ## **2.1.1 Graphe non orienté**
 
@@ -136,7 +136,7 @@ G = [[0, 1, 1, 1, 1],
       [1, 0, 0, 1, 0]]
 ```
 
-<aside>
+<div class="rappel" markdown="1">
 💡
 
 **Complexité en mémoire et temps d'accès :**
@@ -146,7 +146,7 @@ G = [[0, 1, 1, 1, 1],
 
 La modélisation d'un graphe par sa matrice d'adjacence est loin d'être la seule manière de représenter un graphe : nous allons voir une autre modélisation, par **liste d'adjacence**.
 
-</aside>
+</div>
 
 ### 2.2 Représentation par listes d'adjacence
 
@@ -172,14 +172,14 @@ G = {'A': ['B', 'C', 'D', 'E'],
 
 ---
 
-<aside>
+<div class="rappel" markdown="1">
 💡
 
 **Complexité en mémoire et temps d'accès :**
 
 - Pour un graphe à sommets et arêtes, la complexité spatiale de la représentation en liste d'adjacence est en . C'est beaucoup mieux qu'une matrice d'adjacence lorsque le graphe comporte peu d'arêtes (i.e. beaucoup de 0 dans la matrice, non stockés avec des listes).
 - Tester si un sommet est isolé (ou connaître ses voisins) est en puisqu'on y accède immédiatement, mais tester si deux sommets sont adjacents (voisins) est en car il faut parcourir la liste.
-</aside>
+</div>
 
 ## **2.2.1 Exercices**
 
