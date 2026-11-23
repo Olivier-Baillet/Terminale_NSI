@@ -96,15 +96,27 @@ Soit un ensemble d'amis connectés sur un réseau social quelconque. Voici les i
 Construire les graphes correspondants aux matrices d'adjacence suivantes:
 
 **Q1.**
-<div class="rappel" markdown="1">
-$M1 = \begin{pmatrix}
+<div class="rappel">
+$$
+M_1 = \begin{pmatrix}
 0 & 1 & 1 & 1 & 1 \\
 1 & 0 & 1 & 0 & 0 \\
 1 & 1 & 0 & 1 & 0 \\
 1 & 0 & 1 & 0 & 1 \\
 1 & 0 & 0 & 1 & 0
-\end{pmatrix}$
+\end{pmatrix}
+$$
 
+
+  <p>
+    \( M_1 = \begin{pmatrix}
+    0 & 1 & 1 & 1 & 1 \\
+    1 & 0 & 1 & 0 & 0 \\
+    1 & 1 & 0 & 1 & 0 \\
+    1 & 0 & 1 & 0 & 1 \\
+    1 & 0 & 0 & 1 & 0
+    \end{pmatrix} \)
+  </p>
 </div>
 
 - **Correction**
