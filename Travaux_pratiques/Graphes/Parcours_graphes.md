@@ -142,24 +142,10 @@ g.ajoute_arete('G', 'H')
 
 **Q1.** Donner le parcours en largeur de `g` grâce à l'algorithme BFS, si le sommet de départ est B. Cela correspond au parcours présenté par le gif de début de paragraphe.
 
-- **Correction**
-    
-    ```python
-    >>> BFS(g, 'B')
-    ['B', 'A', 'D', 'E', 'C', 'F', 'G', 'H']
-    ```
     
 
 **Q2.** Deviner le parcours en largeur de départ D, puis de départ G. Vérifier grâce à votre algorithme.
 
-- **Correction**
-    
-    ```python
-    >>> BFS(g, 'D')
-    ['D', 'B', 'C', 'E', 'A', 'F', 'G', 'H']
-    >>> BFS(g, 'G')
-    ['G', 'E', 'F', 'H', 'B', 'D', 'A', 'C']
-    ```
     
 
 ## 4.1.3 Application du BFS : recherche du plus court chemin
@@ -260,44 +246,6 @@ Rappel : les voisins sont donnés par ordre alphabétique. Le premier voisin de 
 
 **Q2.** Vérifier avec le code précédent.
 
-- **Correction**
-    
-    ```python
-    class Graphe:
-        def __init__(self, liste_sommets):
-            self.liste_sommets = liste_sommets
-            self.adjacents = {sommet : [] for sommet in liste_sommets}
-    
-        def ajoute_arete(self, sommetA, sommetB):
-            self.adjacents[sommetA].append(sommetB)
-            self.adjacents[sommetB].append(sommetA)
-    
-        def voisins(self, sommet):
-            return self.adjacents[sommet]
-    
-        def sont_voisins(self, sommetA, sommetB):
-            return sommetB in self.adjacents[sommetA]
-    
-    g = Graphe(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'])
-    g.ajoute_arete('A', 'B')
-    g.ajoute_arete('A', 'C')
-    g.ajoute_arete('B', 'D')
-    g.ajoute_arete('D', 'C')
-    g.ajoute_arete('B', 'E')
-    g.ajoute_arete('D', 'E')
-    g.ajoute_arete('E', 'F')
-    g.ajoute_arete('E', 'G')
-    g.ajoute_arete('F', 'G')
-    g.ajoute_arete('G', 'H')
-    
-    def DFSrec(g, traites, actuel):
-        traites.append(actuel)
-        for voisin in g.voisins(actuel):
-            if voisin not in traites:
-                DFSrec(g, traites, voisin)
-        return traites
-    ```
-    
     ---
     
     ```python
