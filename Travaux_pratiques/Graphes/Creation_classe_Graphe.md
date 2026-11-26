@@ -93,8 +93,10 @@ class Graphe:
         return sommetB in self.adjacents[sommetA]
 ```
 
+<div class="rappel" markdown="1">
 ### **Remarques**
 
 - Pour un graphe pondéré, on associera un dictionnaire (d'associations `voisin: valuation`).
 - Pour un graphe à sommets et arêtes, la complexité spatiale (place en mémoire) est en $O(n)$. C'est beaucoup mieux qu'une matrice d'adjacence lorsque le graphe comporte peu d'arêtes (i.e. beaucoup de 0 dans la matrice, non stockés avec des listes).
 - Tester si un sommet est isolé (ou connaître ses voisins) est en puisqu'on y accède immédiatement, mais tester si deux sommets sont adjacents (voisins) est en car il faut parcourir la liste.
+</div>
