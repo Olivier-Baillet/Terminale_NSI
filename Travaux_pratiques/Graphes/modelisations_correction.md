@@ -96,14 +96,15 @@ Soit un ensemble d'amis connectés sur un réseau social quelconque. Voici les i
 Construire les graphes correspondants aux matrices d'adjacence suivantes:
 
 **Q1.**
-<div class="rappel" markdown="1">
-$M1 = \begin{pmatrix}
+$$
+M1 = \begin{pmatrix}
 0 & 1 & 1 & 1 & 1 \\
 1 & 0 & 1 & 0 & 0 \\
 1 & 1 & 0 & 1 & 0 \\
 1 & 0 & 1 & 0 & 1 \\
 1 & 0 & 0 & 1 & 0
-\end{pmatrix}$
+\end{pmatrix}
+$$
 
 </div>
 
@@ -112,26 +113,32 @@ $M1 = \begin{pmatrix}
     ![image](https://glassus.github.io/terminale_nsi/T1_Structures_de_donnees/1.4_Graphes/data/ex2_Q1.png)
     
 
-**Q2.** $M2 = \begin{pmatrix}
+**Q2.**
+$$
+M2 = \begin{pmatrix}
 0 & 1 & 1 & 0 & 1 \\
 0 & 0 & 1 & 0 & 0 \\
 0 & 0 & 0 & 1 & 0 \\
 1 & 0 & 0 & 0 & 1 \\
 0 & 0 & 0 & 0 & 0
-\end{pmatrix}$
+\end{pmatrix}
+$$
 
 - **Correction**
     
     ![image](https://glassus.github.io/terminale_nsi/T1_Structures_de_donnees/1.4_Graphes/data/ex2_Q2.png)
     
 
-**Q3.**  $M3 = \begin{pmatrix}
+**Q3.**
+$$
+M3 = \begin{pmatrix}
 0 & 5 & 10 & 50 & 12 \\
 5 & 0 & 10 & 0  & 0 \\
 10 & 10 & 0 & 8 & 0 \\
 50 & 0 & 8 & 0 & 100 \\
 12 & 0 & 0 & 100 & 0
-\end{pmatrix}$
+\end{pmatrix}
+$$
 
 - **Correction**
     
@@ -146,13 +153,15 @@ Une matrice se représente naturellement par une liste de listes.
 
 **Exemple:** 
 
-$M1 = \begin{pmatrix}
+$$
+M1 = \begin{pmatrix}
 0 & 1 & 1 & 0 & 1 \\
 0 & 0 & 1 & 0 & 0 \\
 0 & 0 & 0 & 1 & 0 \\
 1 & 0 & 0 & 0 & 1 \\
 0 & 0 & 0 & 0 & 0
-\end{pmatrix}$
+\end{pmatrix}
+$$
 
 La matrice , associée au graphe
 
