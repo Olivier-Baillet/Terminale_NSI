@@ -9,7 +9,7 @@
     border-radius: 5px;
 }
 
-.attention {
+.exercice {
     background-color: #fff4df;
     border-left: 5px solid #e6a23c;
     padding: 15px 20px;
@@ -118,6 +118,9 @@ Le test de la ligne 13 `if voisin not in decouverts:` permet donc de ne pa
 
 ![image](https://glassus.github.io/terminale_nsi/T1_Structures_de_donnees/1.4_Graphes/data/en_attente.png)
 
+
+<div class="exercice" markdown="1">
+
 ### **Exercice 4**
 
 ![image](https://glassus.github.io/terminale_nsi/T1_Structures_de_donnees/1.4_Graphes/data/BFS_ex1.png)
@@ -146,7 +149,7 @@ g.ajoute_arete('G', 'H')
 
 **Q2.** Deviner le parcours en largeur de départ D, puis de départ G. Vérifier grâce à votre algorithme.
 
-    
+</div>
 
 ## 4.1.3 Application du BFS : recherche du plus court chemin
 
@@ -207,11 +210,14 @@ def remonte_chemin(depart, arrivee, parent):
 
 ---
 
+<div class="exercice" markdown="1">
 ### **Exercice 5**
 
 ![image](https://glassus.github.io/terminale_nsi/T1_Structures_de_donnees/1.4_Graphes/data/BFS_ex1.png)
 
 Tester le code précédent pour trouver le plus court chemin entre A et G, entre H et C, entre B et G...
+
+</div>
 
 # 4.2 Le parcours en profondeur (DFS, Depth First Search)
 
@@ -236,6 +242,7 @@ def DFSrec(g, traites, actuel):
 
 ---
 
+<div class="exercice" markdown="1">
 ### **Exercice 6**
 
 ![image](https://glassus.github.io/terminale_nsi/T1_Structures_de_donnees/1.4_Graphes/data/BFS_ex1.png)
@@ -255,6 +262,8 @@ Rappel : les voisins sont donnés par ordre alphabétique. Le premier voisin de 
     
 
 **Q3.** Reprendre les questions précédentes en changeant le sommet de départ.
+
+</div>
 
 ## **4.2.2 Parcours DFS itératif**
 
